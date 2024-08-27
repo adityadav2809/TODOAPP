@@ -1,0 +1,187 @@
+/* style.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* light gray background */
+  }
+  
+  h1 {
+    color: #2E4053; /* dark blue heading */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Task Input Styles */
+  #taskInput {
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ddd; /* light gray border */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+   
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #34A853; /* green button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2F865F; /* darker green on hover */
+  }
+  
+  /* Task List Styles */
+  #taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #taskList li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* light gray border */
+    width: 33.33%;
+    text-align: center;
+  }
+  
+  #taskList li:last-child {
+    border-bottom: none;
+  }
+  
+  #taskList li button {
+    background-color: #34A853; /* green button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #taskList li button.delete {
+    background-color: #FFC107; /* orange delete button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #taskList li button.delete:hover {
+    background-color: #FF9900; /* darker orange on hover */
+  }
+  
+  /* Center the task input field and make it 1/3 of the screen width */
+  #taskInputContainer {
+    width: 33.33%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  #taskInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ddd; /* light gray border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  #taskList li.new {
+    background-color: #FFC107; /* orange background for new list items */
+  }
+  
+  #taskList li.new:hover {
+    background-color: #FF9900; /* darker orange on hover for new list items */
+  }
+  #taskList li {
+    padding: 10px;
+    border: 2px solid #000; /* add black border */
+    border-bottom: 1px solid #ddd; /* light gray border below each item */
+    border-radius: 10px;
+    width: 33.33%;
+    text-align: center;
+  }
+  #taskList li {
+    padding: 10px;
+    border: 2px solid #000; /* add black border */
+    border-bottom: 1px solid #ddd; /* light gray border below each item */
+    border-radius: 10px;
+    width: 33.33%;
+    text-align: center;
+    margin-bottom: 20px; /* add 20px margin below each list item */
+  }
+  #taskList li {
+    padding: 10px;
+    border: 2px solid #000; /* add black border */
+    border-bottom: 1px solid #ddd; /* light gray border below each item */
+    border-radius: 10px;
+    width: 33.33%;
+    text-align: center;
+    margin: 10px; /* add 10px margin around each list item */
+    background-color: azure;
+  }
+  #taskList li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  #taskInput {
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color:khaki;
+  }
+  /* Add a new class for the animated text */
+.animated-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666; /* dark gray text color */
+  }
+  
+  /* Add the animation to the text */
+  .animated-text {
+    position: relative;
+    animation: move-text 3s infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes move-text {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  /* Add styles for the movable text */
+  .animated-text {
+    position: absolute;
+    left: 10px;
+    top: 20%;
+    transform: translateY(-100%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000; /* dark gray text color */
+    animation: move-text 2s infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes move-text {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
